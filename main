@@ -68,7 +68,7 @@ if __name__ == "__main__":
             x_ = net.decode(z)
 
             loss_rec = criterion(x, x_)
-            loss_rec += kld
+            loss_clu_batch += kld
 
             loss = loss_rec + loss_clu_batch
 
